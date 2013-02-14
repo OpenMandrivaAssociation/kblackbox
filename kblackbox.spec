@@ -1,0 +1,39 @@
+Name:		kblackbox
+Version:	4.10.0
+Release:	1
+Epoch:		1
+Summary:	Find atoms in a grid by shooting electrons
+Group:		Graphical desktop/KDE
+License:	GPLv2 and LGPLv2 and GFDL
+URL:		http://games.kde.org/game.php?game=kblackbox
+Source:		ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.xz
+BuildRequires:	libkdegames-devel
+
+%description
+KBlackbox is a game of hide and seek played on a grid of boxes where the
+computer has hidden several balls. The position of the hidden balls can be
+deduced by shooting beams into the box.
+
+%files
+%{_kde_bindir}/kblackbox
+%{_kde_applicationsdir}/kblackbox.desktop
+%{_kde_appsdir}/kblackbox
+%{_kde_docdir}/*/*/kblackbox
+%{_kde_iconsdir}/hicolor/*/apps/kblackbox.png
+
+#------------------------------------------------------------------------------
+
+%prep
+%setup -q
+
+%build
+%cmake_kde4
+%make
+
+%install
+%makeinstall_std -C build
+
+%changelog
+* Wed Feb 13 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.10.0-1
+- Split from kdegames4 package
+
