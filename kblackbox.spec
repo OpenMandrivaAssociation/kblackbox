@@ -16,11 +16,13 @@ computer has hidden several balls. The position of the hidden balls can be
 deduced by shooting beams into the box.
 
 %files
-%{_kde_bindir}/kblackbox
-%{_kde_applicationsdir}/kblackbox.desktop
-%{_kde_appsdir}/kblackbox
-%{_kde_docdir}/*/*/kblackbox
-%{_kde_iconsdir}/hicolor/*/apps/kblackbox.png
+%doc %{_docdir}/HTML/*/kblackbox
+%{_bindir}/kblackbox
+%{_datadir}/appdata/kblackbox.appdata.xml
+%{_datadir}/applications/org.kde.kblackbox.desktop
+%{_iconsdir}/hicolor/*/apps/kblackbox.png
+%{_datadir}/kblackbox
+%{_datadir}/kxmlgui5/kblackbox/kblackboxui.rc
 
 #------------------------------------------------------------------------------
 
