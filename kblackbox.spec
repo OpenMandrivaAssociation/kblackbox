@@ -1,5 +1,5 @@
 Name:		kblackbox
-Version:	15.12.3
+Version:	16.04.0
 Release:	1
 Epoch:		1
 Summary:	Find atoms in a grid by shooting electrons
@@ -24,7 +24,7 @@ deduced by shooting beams into the box.
 %files
 %doc %{_docdir}/HTML/*/kblackbox
 %{_bindir}/kblackbox
-%{_datadir}/appdata/kblackbox.appdata.xml
+%{_datadir}/appdata/org.kde.kblackbox.appdata.xml
 %{_datadir}/applications/org.kde.kblackbox.desktop
 %{_iconsdir}/hicolor/*/apps/kblackbox.png
 %{_datadir}/kblackbox
