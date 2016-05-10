@@ -15,6 +15,7 @@ BuildRequires:  cmake(KF5Archive)
 BuildRequires:  cmake(KF5XmlGui)
 BuildRequires:	cmake(KF5KDEGames)
 BuildRequires:	cmake(KF5DocTools)
+BuildRequires:	cmake(KF5Crash)
 
 %description
 KBlackbox is a game of hide and seek played on a grid of boxes where the
