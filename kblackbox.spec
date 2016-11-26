@@ -25,7 +25,7 @@ deduced by shooting beams into the box.
 %files
 %doc %{_docdir}/HTML/*/kblackbox
 %{_bindir}/kblackbox
-%{_datadir}/appdata/org.kde.kblackbox.appdata.xml
+%{_datadir}/metainfo/org.kde.kblackbox.appdata.xml
 %{_datadir}/applications/org.kde.kblackbox.desktop
 %{_iconsdir}/hicolor/*/apps/kblackbox.png
 %{_datadir}/kblackbox
