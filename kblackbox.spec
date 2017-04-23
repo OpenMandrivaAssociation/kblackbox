@@ -1,5 +1,5 @@
 Name:		kblackbox
-Version:	17.03.80
+Version:	17.04.0
 Release:	1
 Epoch:		1
 Summary:	Find atoms in a grid by shooting electrons
@@ -23,8 +23,7 @@ KBlackbox is a game of hide and seek played on a grid of boxes where the
 computer has hidden several balls. The position of the hidden balls can be
 deduced by shooting beams into the box.
 
-%files
-%doc %{_docdir}/HTML/*/kblackbox
+%files -f kblackbox.lang
 %{_bindir}/kblackbox
 %{_datadir}/metainfo/org.kde.kblackbox.appdata.xml
 %{_datadir}/applications/org.kde.kblackbox.desktop
@@ -43,3 +42,4 @@ deduced by shooting beams into the box.
 
 %install
 %ninja_install -C build
+%find_lang kblackbox --with-html
