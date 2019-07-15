@@ -1,4 +1,2 @@
-removed_sources:
-  kblackbox-17.12.1.tar.xz: a5d312ead9f9ae048ca3a1ae1f4b24b1be7c58f1
 sources:
-  kblackbox-19.04.2.tar.xz: 2db97d76a83099a6779138aca01965020663e954
+  kblackbox-19.04.3.tar.xz: c0b0aa92293f1fc409be648f69f859936ae4ab6e
