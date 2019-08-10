@@ -1,5 +1,5 @@
 Name:		kblackbox
-Version:	19.07.90
+Version:	19.08.0
 Release:	1
 Epoch:		1
 Summary:	Find atoms in a grid by shooting electrons
