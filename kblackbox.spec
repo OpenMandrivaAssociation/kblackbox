@@ -1,6 +1,6 @@
 Name:		kblackbox
 Version:	20.08.1
-Release:	1
+Release:	2
 Epoch:		1
 Summary:	Find atoms in a grid by shooting electrons
 Group:		Graphical desktop/KDE
