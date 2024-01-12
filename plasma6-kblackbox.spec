@@ -10,6 +10,7 @@ Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/kblack
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(Qt6)
 BuildRequires:	cmake(Qt6Widgets)
+BuildRequires:  cmake(Qt6SvgWidgets)
 BuildRequires:	cmake(Qt6Svg)
 BuildRequires:  cmake(KF6Archive)
 BuildRequires:  cmake(KF6CoreAddons)
@@ -21,6 +22,7 @@ BuildRequires:  cmake(KF6XmlGui)
 BuildRequires:	cmake(KDEGames6)
 BuildRequires:	cmake(KF6TextWidgets)
 BuildRequires:	cmake(KF6DocTools)
+BuildRequires:  qt6-qtbase-theme-gtk3
 
 %description
 KBlackbox is a game of hide and seek played on a grid of boxes where the
