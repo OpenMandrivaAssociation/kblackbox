@@ -1,6 +1,6 @@
 Name:		plasma6-kblackbox
-Version:	24.01.90
-Release:	2
+Version:	24.01.95
+Release:	1
 Summary:	Find atoms in a grid by shooting electrons
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
