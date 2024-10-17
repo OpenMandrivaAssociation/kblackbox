@@ -7,7 +7,7 @@ Release:	%{?git:0.%{git}.}1
 Summary:	Find atoms in a grid by shooting electrons
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
-URL:		http://games.kde.org/game.php?game=kblackbox
+URL:		https://games.kde.org/game.php?game=kblackbox
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 %if 0%{?git:1}
 Source0:	https://invent.kde.org/games/kblackbox/-/archive/%{gitbranch}/kblackbox-%{gitbranchd}.tar.bz2#/kblackbox-%{git}.tar.bz2
