@@ -2,7 +2,7 @@
 %define gitbranch release/24.02
 %define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 Name:		kblackbox
-Version:	25.04.0
+Version:	25.04.3
 Release:	%{?git:0.%{git}.}1
 Summary:	Find atoms in a grid by shooting electrons
 Group:		Graphical desktop/KDE
@@ -31,6 +31,11 @@ BuildRequires:	cmake(KF6TextWidgets)
 BuildRequires:	cmake(KF6DocTools)
 BuildRequires:  qt6-qtbase-theme-gtk3
 
+BuildSystem:	cmake
+BuildOption:	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
+
+%rename plasma6-kblackbox
+
 %description
 KBlackbox is a game of hide and seek played on a grid of boxes where the
 computer has hidden several balls. The position of the hidden balls can be
@@ -42,18 +47,3 @@ deduced by shooting beams into the box.
 %{_datadir}/applications/org.kde.kblackbox.desktop
 %{_iconsdir}/hicolor/*/apps/kblackbox.png
 %{_datadir}/kblackbox
-
-#------------------------------------------------------------------------------
-
-%prep
-%autosetup -p1 -n kblackbox-%{?git:%{gitbranchd}}%{!?git:%{version}}
-%cmake \
-	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
-	-G Ninja
-
-%build
-%ninja -C build
-
-%install
-%ninja_install -C build
-%find_lang kblackbox --with-html
