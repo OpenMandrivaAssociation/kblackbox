@@ -2,7 +2,7 @@
 %define gitbranch release/24.02
 %define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 Name:		kblackbox
-Version:	25.12.2
+Version:	25.12.3
 Release:	%{?git:0.%{git}.}1
 Summary:	Find atoms in a grid by shooting electrons
 Group:		Graphical desktop/KDE
